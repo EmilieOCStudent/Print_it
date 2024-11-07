@@ -19,3 +19,17 @@ const slides = [
 
 let flechesDuSlide = document.querySelectorAll(".arrow")
 console.log(flechesDuSlide)
+
+for (let i = 0; i < flechesDuSlide.length; i++) {
+    console.log(flechesDuSlide[i])
+}
+
+let flecheGauche = flechesDuSlide[0]
+flecheGauche.addEventListener("click", function () {
+	console.log("Flèche gauche cliquée")
+})
+
+let flecheDroite = flechesDuSlide[1]
+flecheDroite.addEventListener("click", function () {
+	console.log("Flèche droite cliquée")
+})
